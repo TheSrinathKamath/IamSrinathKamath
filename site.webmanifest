@@ -2,7 +2,6 @@
     "name": "Srinath Kamath",
     "short_name": "Srinath Kamath",
     "start_url": "/",
-    "scope" : "/",
     "icons": [
         {
             "src": "assets/icons/android-chrome-192x192.png",
