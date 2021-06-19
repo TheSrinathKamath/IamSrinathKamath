@@ -3,30 +3,46 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Srinath Kamath - Freelance Web Developer</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srinath Kamath - Freelance Web Developer</title>
+
+    <!-- author -->
+    <meta name="author" content="Srinath Kamath">
+
+    <!-- description -->
+    <meta name="description"
+        content="Hi, I'm Srinath Kamath. I'm a Freelance Creative & Professional Web Developer. I use JavaScript frameworks for building super-fast websites, PWAs, Hybrid-applications & more.">
+
+    <!-- keywords -->
+    <meta name="keywords" content="Freelance developer">
+
+    <!-- Icons & Logo -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+
+    <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-        crossorigin="anonymous">
-    </script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" crossorigin="anonymous">
-    </script>
 </head>
-<style>
-
-</style>
 
 <body>
     <div class="container center">
         <section>
+            <!-- <img class="logo-main" src="assets/icons/logo.svg" alt="srinath_kamath" draggable="false" lazy> -->
             <h1>Srinath Kamath</h1>
             <h4>Freelance Web Developer</h4>
+            <div id="btn-wrapper">
+                <button class="btn-simple">HIRE ME</button>
+            </div>
             <div class="carousel-container">
                 <div class="carousel">
 
@@ -90,23 +106,72 @@
 
                     </div>
 
+                    <div class="carousel-item" id="_animations">
+
+                        <!-- Link to the image to open in full screen when clicked with lity plugin -->
+                        <a href="#" data-lity>
+
+                            <!-- Screenshot Image -->
+                            <img class="responsive-img" src="assets/images/animations.svg" alt="animations">
+
+                        </a>
+
+                    </div>
+
+                    <div class="carousel-item" id="_universal">
+
+                        <!-- Link to the image to open in full screen when clicked with lity plugin -->
+                        <a href="#" data-lity>
+
+                            <!-- Screenshot Image -->
+                            <img class="responsive-img" src="assets/images/universal.svg" alt="seo">
+
+                        </a>
+
+                    </div>
+
+                    <div class="carousel-item" id="_js">
+
+                        <!-- Link to the image to open in full screen when clicked with lity plugin -->
+                        <a href="#" data-lity>
+
+                            <!-- Screenshot Image -->
+                            <img class="responsive-img" src="assets/images/js.svg" alt="js">
+
+                        </a>
+
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 </body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"
+    crossorigin="anonymous">
+</script>
+<script src="assets/js/scripts.js"></script>
 <script>
+    // includeHTML();
     $(document).ready(function () {
-
         $(".carousel").carousel({
             dist: -70,
             fullWidth: !1,
             shift: 0,
             padding: -100,
             onCycleTo: (el) => {
-                console.log(el[0].id)
+                changeBg(el[0].id);
             }
+        }, setTimeout(autoplay, 4500));
+        $('.sidenav').sideNav({
+            menuWidth: 300,
+            closeOnClick: false,
+            edge: 'left',
+            draggable: true
         });
+
     });
 </script>
 

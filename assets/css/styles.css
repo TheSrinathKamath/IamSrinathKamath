@@ -4,10 +4,10 @@ body {
     line-height: 1.2em !important;
     /* font-weight: 400 !important; */
     letter-spacing: 1px;
-    /* background-image: url('w3css.gif'); */
-    background-repeat: no-repeat;
+    /* background-image: url('../images/background.svg'); */
+    /* background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; */
 }
 
 .center {
@@ -48,4 +48,34 @@ section {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: lightslategray;
+}
+
+button {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: small !important;
+    color: #767676 !important;
+}
+
+.btn-simple {
+    border: 1px solid #d1d1d1 !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: white;
+    transition: background-color .1s ease-in-out;
+}
+
+.btn-simple:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.btn-simple:focus {
+    background-color: #f5f5f5 !important;
+}
+
+.btn-simple:active {
+    background-color: #f5f5f5 !important;
+}
+
+.logo-main {
+    height: 250px;
 }
