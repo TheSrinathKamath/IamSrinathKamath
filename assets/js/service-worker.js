@@ -1,7 +1,7 @@
 const initSW = () => {
     navigator.serviceWorker &&
         navigator.serviceWorker
-            .register('assets/js/service-worker.js')
+            .register('./service-worker.js')
             .then((registration) => {
             });
 };
