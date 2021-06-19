@@ -1,22 +1,113 @@
-<html>
-  <style>
-    .container { 
-      display: grid;
-      place-items: center;
-      height: 100vh;
-    }
-    section {
-      margin: auto;
-      text-align: center;
-    }
-  </style>
-  <body>
-    <div class="container">
-      <section>
-        <h1>Srinath Kamath</h1>
-        <h4>Freelance Web Developer</h4>
-        <h4>Coming soon!</h4>
-      </section>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinath Kamath - Freelance Web Developer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" crossorigin="anonymous">
+    </script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="container center">
+        <section>
+            <h1>Srinath Kamath</h1>
+            <h4>Freelance Web Developer</h4>
+            <div class="carousel-container">
+                <div class="carousel">
+
+                    <div class="carousel-item" id="_angular">
+
+                        <!-- Link to the image to open in full screen when clicked with lity plugin -->
+                        <a href="#" data-lity>
+
+                            <!-- Screenshot Image -->
+                            <img class="responsive-img" src="assets/images/angular.svg" alt="angular">
+
+                        </a>
+
+                    </div>
+
+                    <div class="carousel-item" id="_pwa">
+
+                        <!-- Link to the image to open in full screen when clicked with lity plugin -->
+                        <a href="#" data-lity>
+
+                            <!-- Screenshot Image -->
+                            <img class="responsive-img" src="assets/images/pwa.svg" alt="progressive_web_apps">
+
+                        </a>
+
+                    </div>
+
+                    <div class="carousel-item" id="_material">
+
+                        <!-- Link to the image to open in full screen when clicked with lity plugin -->
+                        <a href="#" data-lity>
+
+                            <!-- Screenshot Image -->
+                            <img class="responsive-img" src="assets/images/material.svg" alt="angular_material">
+
+                        </a>
+
+                    </div>
+
+                    <div class="carousel-item" id="_ionic">
+
+                        <!-- Link to the image to open in full screen when clicked with lity plugin -->
+                        <a href="#" data-lity>
+
+                            <!-- Screenshot Image -->
+                            <img class="responsive-img" src="assets/images/ionic.svg" alt="ionic">
+
+                        </a>
+
+                    </div>
+
+                    <div class="carousel-item" id="_nodejs">
+
+                        <!-- Link to the image to open in full screen when clicked with lity plugin -->
+                        <a href="#" data-lity>
+
+                            <!-- Screenshot Image -->
+                            <img class="responsive-img" src="assets/images/nodejs.svg" alt="nodejs">
+
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </div>
-  </body>
+</body>
+<script>
+    $(document).ready(function () {
+
+        $(".carousel").carousel({
+            dist: -70,
+            fullWidth: !1,
+            shift: 0,
+            padding: -100,
+            onCycleTo: (el) => {
+                console.log(el[0].id)
+            }
+        });
+    });
+</script>
+
 </html>

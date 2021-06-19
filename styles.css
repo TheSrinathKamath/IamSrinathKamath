@@ -1,0 +1,51 @@
+html,
+body {
+    font-family: 'Jost', sans-serif;
+    line-height: 1.2em !important;
+    /* font-weight: 400 !important; */
+    letter-spacing: 1px;
+    /* background-image: url('w3css.gif'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+section {
+    margin: auto;
+    text-align: center;
+}
+
+.carousel-container {
+    width: 500px;
+}
+
+.carousel {
+    height: 600px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: lightslategray;
+}
