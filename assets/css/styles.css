@@ -4,10 +4,14 @@ body {
     line-height: 1.2em !important;
     /* font-weight: 400 !important; */
     letter-spacing: 1px;
-    /* background-image: url('../images/background.svg'); */
-    /* background-repeat: no-repeat;
+    background-image: url('../icons/logo.svg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; */
+    background-position: center top;
+}
+
+.logo-main {
+    height: 250px;
 }
 
 .center {
@@ -74,8 +78,4 @@ button {
 
 .btn-simple:active {
     background-color: #f5f5f5 !important;
-}
-
-.logo-main {
-    height: 250px;
 }
