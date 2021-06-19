@@ -7,22 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- author -->
+    <!-- Author -->
     <meta name="author" content="Srinath Kamath">
 
-    <!-- description -->
+    <!-- Description -->
     <meta name="description"
         content="Hi, I'm Srinath Kamath. I'm a Freelance Creative & Professional Web Developer. I use JavaScript frameworks for building super-fast websites, PWAs, Hybrid-applications & more.">
 
-    <!-- keywords -->
-    <meta name="keywords" content="Freelance developer">
+    <!-- Keywords -->
+    <meta name="keywords"
+        content="Freelance developer in Angular, PWA, Progressive Web Apps, Ionic, NodeJS, BootStrap, Frontend development, Fullstack development">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#ffffff"> <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#ffffff"> <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
 
     <!-- Icons & Logo -->
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-    <link rel="manifest" href="assets/icons/site.webmanifest">
+    <link rel="manifest" href="./site.webmanifest">
 
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -52,7 +58,8 @@
                         <a href="#" data-lity>
 
                             <!-- Screenshot Image -->
-                            <img class="responsive-img" src="assets/images/angular.svg" alt="angular">
+                            <img class="responsive-img" src="assets/images/angular.svg" alt="angular"
+                                title="Single Page Applications">
 
                         </a>
 
@@ -64,7 +71,8 @@
                         <a href="#" data-lity>
 
                             <!-- Screenshot Image -->
-                            <img class="responsive-img" src="assets/images/pwa.svg" alt="progressive_web_apps">
+                            <img class="responsive-img" src="assets/images/pwa.svg" alt="progressive_web_apps"
+                                title="Progressive Web Applications">
 
                         </a>
 
@@ -76,7 +84,8 @@
                         <a href="#" data-lity>
 
                             <!-- Screenshot Image -->
-                            <img class="responsive-img" src="assets/images/material.svg" alt="angular_material">
+                            <img class="responsive-img" src="assets/images/material.svg" alt="angular_material"
+                                title="Enterprise Applications">
 
                         </a>
 
@@ -88,7 +97,8 @@
                         <a href="#" data-lity>
 
                             <!-- Screenshot Image -->
-                            <img class="responsive-img" src="assets/images/ionic.svg" alt="ionic">
+                            <img class="responsive-img" src="assets/images/ionic.svg" alt="ionic"
+                                title="Hybrid Apps for iOS & Android">
 
                         </a>
 
@@ -100,7 +110,7 @@
                         <a href="#" data-lity>
 
                             <!-- Screenshot Image -->
-                            <img class="responsive-img" src="assets/images/nodejs.svg" alt="nodejs">
+                            <img class="responsive-img" src="assets/images/nodejs.svg" alt="nodejs" title="SSR Apps">
 
                         </a>
 
@@ -112,7 +122,8 @@
                         <a href="#" data-lity>
 
                             <!-- Screenshot Image -->
-                            <img class="responsive-img" src="assets/images/animations.svg" alt="animations">
+                            <img class="responsive-img" src="assets/images/animations.svg" alt="animations"
+                                title="Modern Websites">
 
                         </a>
 
@@ -124,7 +135,8 @@
                         <a href="#" data-lity>
 
                             <!-- Screenshot Image -->
-                            <img class="responsive-img" src="assets/images/universal.svg" alt="seo">
+                            <img class="responsive-img" src="assets/images/universal.svg" alt="seo"
+                                title="SEO for Angular Websites">
 
                         </a>
 
@@ -136,7 +148,8 @@
                         <a href="#" data-lity>
 
                             <!-- Screenshot Image -->
-                            <img class="responsive-img" src="assets/images/js.svg" alt="js">
+                            <img class="responsive-img" src="assets/images/js.svg" alt="js"
+                                title="SEO-friendly Static Websites">
 
                         </a>
 
@@ -146,6 +159,8 @@
         </section>
     </div>
 </body>
+
+<!-- Scripts -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
     crossorigin="anonymous">
 </script>
@@ -153,8 +168,12 @@
     crossorigin="anonymous">
 </script>
 <script src="assets/js/scripts.js"></script>
+
+<!-- SW -->
+<script src="assets/js/service-worker.js"></script>
+
 <script>
-    // includeHTML();
+    initSW();
     $(document).ready(function () {
         $(".carousel").carousel({
             dist: -70,
@@ -171,7 +190,6 @@
             edge: 'left',
             draggable: true
         });
-
     });
 </script>
 
