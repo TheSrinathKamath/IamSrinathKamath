@@ -1,81 +1,220 @@
 html,
 body {
-    font-family: 'Jost', sans-serif;
-    line-height: 1.2em !important;
-    /* font-weight: 400 !important; */
-    letter-spacing: 1px;
-    background-image: url('../icons/logo.svg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top;
+  font-family: "Jost", sans-serif;
+  line-height: 1.2em !important;
+  /* font-weight: 400 !important; */
+  letter-spacing: 1px;
+  background-image: url("../icons/logo.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
 }
 
 .logo-main {
-    height: 250px;
+  height: 250px;
 }
 
 .center {
-    display: grid;
-    place-items: center;
-    height: 100vh;
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
 section {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
 
 .carousel-container {
-    width: 500px;
+  width: 500px;
+  margin: auto;
 }
 
 .carousel {
-    height: 600px;
+  height: 600px;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 10px;
+  width: 5px;
+  height: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: lightgray;
+  background: lightgray;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: lightslategray;
+  background: lightslategray;
 }
 
 button {
-    font-family: 'Roboto', sans-serif !important;
-    font-size: small !important;
-    color: #767676 !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
-.btn-simple {
-    border: 1px solid #d1d1d1 !important;
-    padding: 8px 16px;
-    border-radius: 5px;
-    background-color: white;
-    transition: background-color .1s ease-in-out;
+.border-gradient {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
 }
 
-.btn-simple:hover {
-    background-color: #f5f5f5 !important;
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+.row {
+  width: 100vw !important;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  text-align: center;
+  padding: 0 50px;
 }
 
-.btn-simple:focus {
-    background-color: #f5f5f5 !important;
+.card {
+  padding: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 2px 8px 10px -5px grey;
+}
+.card .card-header {
+  font-weight: bold;
+  text-transform: capitalize;
+  display: flex;
+  place-content: space-between;
+  place-items: center;
+}
+.card .card-header .links {
+  display: flex;
+  place-content: end;
+  place-items: center;
+  width: 30%;
+  gap: 20px;
+}
+.card .card-header a {
+  text-decoration: none;
+  color: #767676;
+}
+.card .card-header a:hover {
+  text-decoration: none;
+  color: #743ad5;
+}
+.card p {
+  color: #767676;
+}
+.card .languages {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+.card .languages .language {
+  display: flex;
+  gap: 5px;
+  text-transform: uppercase;
+}
+.card .languages .language .language-badge .fa-brands {
+  vertical-align: middle;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
-.btn-simple:active {
-    background-color: #f5f5f5 !important;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.shine {
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: inline-block;
+  position: relative;
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+}
+
+box {
+  height: 104px;
+  width: 100px;
+}
+.s3 {
+  text-align: left;
+}
+.shine-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-top: 15px;
+  vertical-align: top;
+}
+
+lines {
+  height: 10px;
+  margin-top: 10px;
+  width: 200px;
+}
+
+photo {
+  display: block !important;
+  width: 325px;
+  height: 100px;
+  margin-top: 15px;
+}
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
 }

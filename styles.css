@@ -1,0 +1,26 @@
+@import './colors.css';
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', monospace;
+    color: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1.2px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    background-image: linear-gradient(to right top, #000000, #111111, #1c1c1c, #272727, #323232);
+    display: grid;
+    place-content: center;
+}
